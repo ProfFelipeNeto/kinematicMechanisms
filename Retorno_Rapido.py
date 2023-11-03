@@ -73,7 +73,7 @@ for theta in Theta:
     mod_Ac=np.sqrt(Acx**2+Acy**2)    
     ac=np.array([Acx,Acy,mod_Ac]) ;    Ac=np.append(Ac,[ac],axis=0)
 #Aceleração D
-    l3pp= -phipp*l3/tan(phi) -phip**2*l3 -2*phip*l3p/tan(phi)
+    l3pp= -phipp*l3/tan(phi) +phip**2*l3 -2*phip*l3p/tan(phi)
     Adx= -phipp*l3*sin(phi) -phip**2*l3*cos(phi) -2*phip*l3p*sin(phi) + l3pp*cos(phi)
     Ady= 0.0    
     mod_Ad=np.sqrt(Adx**2+Ady**2)    
